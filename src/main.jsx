@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Listado } from './layouts/pages/Listado.jsx'
+import { Listado } from './layouts/auth/Listado.jsx'
 import { Formulario } from './layouts/auth/Formulario.jsx'
 
 const router = createBrowserRouter([

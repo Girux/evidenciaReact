@@ -11,10 +11,7 @@ function Formulario() {
   const [getCorreo, setCorreo] = useState("")
   const [getNota, setNota] = useState("")
 
-  const redireccion = useNavigate()
-
   //const [reEstudiantes, setEstudiantes] = useState([])
-
 function registrarEstudiantes(e) {
   e.preventDefault();
   if (getNombre !== "" &&
