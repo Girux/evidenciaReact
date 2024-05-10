@@ -5,7 +5,7 @@ function App() {
   return (
     <>
    <h1>aiuda</h1>
-   <Formulario></Formulario>
+   <Formulario />
     </>
   )
 }
