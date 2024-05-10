@@ -1,5 +1,6 @@
 import './Formulario.css'
 import React, { useRef, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { info } from '../../database/Informacion'
 
 function Formulario() {
@@ -9,6 +10,8 @@ function Formulario() {
   const [getEdad, setEdad] = useState("")
   const [getCorreo, setCorreo] = useState("")
   const [getNota, setNota] = useState("")
+
+  const redireccion = useNavigate()
 
   //const [reEstudiantes, setEstudiantes] = useState([])
 
@@ -27,7 +30,7 @@ function registrarEstudiantes(e) {
       nota: getNota
     };
     
-    info.push([datos])
+    info.push(datos)
     console.log(datos)
     resetForm.current.reset()
   }
@@ -71,6 +74,7 @@ function registrarEstudiantes(e) {
       </label>
 
       <button onClick = {registrarEstudiantes} type="submit">Registrar</button>
+      <Link to={ '/listado'}>Datos de Estudiantes</Link>
     </form>
   )
 }
